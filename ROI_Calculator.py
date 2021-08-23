@@ -19,7 +19,7 @@ class property():
     def enterIncome(self):
         # Ask if they would like to enter their total income in one step
         response = input('\nWould you like to enter your income as a whole or categorized?: ')
-        if response.lower() == 'yes':
+        if response.lower() == 'whole':
             response = input('\nEnter Total Income: ')
             self.income['Total Income'] = response
             return self.income
@@ -64,7 +64,7 @@ class property():
     def enterExpenses(self):
         # Ask if they would like to enter their total expenses in one step
         response = input('\nWould you like to enter your expenses as a whole or categorized?: ')
-        if response.lower() == 'yes':
+        if response.lower() == 'whole':
             response = input('\nHow much are the total expenses?: ')
             self.expenses['Total Expenses'] = response
             return self.expenses
@@ -145,7 +145,7 @@ class property():
     def enterInvestment(self):
         # Ask if they would like to enter their total investment in one step
         response = input('\nWould you like to enter your investment as a whole or categorized?: ')
-        if response.lower() == 'yes':
+        if response.lower() == 'whole':
             response = input('\nHow much total investment will you be putting in?: ')
             self.investment['Total Investment'] = response
             return self.investment
